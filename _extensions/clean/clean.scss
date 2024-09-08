@@ -3,9 +3,10 @@
 // Custom colours and variables
 
 $jet: #131516;
-$accent: #107895;
+$accent: #3333B3;
 $accent2: #9a2515;
-// $accent2: #e64173;
+$accent3: #e64173;
+$grey: #747474;
 $right-arrow: "\2192"; // Unicode character for right arrow
 
 // fonts
@@ -24,10 +25,10 @@ Note: This theme uses the Roboto font family, which it imports from Google
   preserving consistent font weights, you may also wish to remove "Roboto"
   from the choice set if the family is installed locally.
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
-$font-family-sans-serif: "Roboto", sans-serif !default;
-$presentation-heading-font: "Roboto", sans-serif !default;
+$font-family-sans-serif: "Fira Sans", sans-serif !default;
+$presentation-heading-font: "Fira Sans", sans-serif !default;
 
 $presentation-heading-color: $jet !default;
 $presentation-heading-font-weight: lighter;
@@ -60,7 +61,8 @@ $selection-bg: #26351c !default;
   text-align: left;
 
   .title {
-    color: $body-color;
+    color: $jet;
+    font-style: bold;
     font-size: 1.4em;
     // font-weight: 350;
     font-weight: lighter;
@@ -68,17 +70,8 @@ $selection-bg: #26351c !default;
 
   .subtitle {
     color: $accent;
-    font-style: italic;
     margin-top: 0em;
     font-weight: lighter;
-  }
-
-  .institute,
-  .quarto-title-affiliation,
-  .quarto-title-author-email {
-    font-style: italic;
-    // font-size: 80%;
-    // color: #7F7F7F;
   }
 
   .author,
@@ -102,12 +95,13 @@ $selection-bg: #26351c !default;
 
 .reveal h2 {
   // font-weight: 350;
+  color: $accent;
   font-weight: lighter;
   font-size: 1.4em;
 }
 
 .reveal h3 {
-  color: $accent;
+  color: $grey;
   font-style: italic;
   // font-weight: 350;
   font-weight: lighter;
